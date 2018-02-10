@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lattitude Analysis_Bechir Bouzid</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+.navbar{
+      margin-top: 0%;
+      margin-bottom: 0;
+      margin-left: 0%;
+      border-radius: 0;
+      background-color: #FFF;
+      color: #FFF;
+      padding: 0% 10;
+      font-size:4.0e;
+      border:0;
+    } 
+    .navbar-brand{
+      margin-left: 5%;
+      background-color: rgb(60, 206, 194);
+      color: rgb(0, 255, 76);
+      min-height:40px;
+      padding: 20 60px 5px;
+      font-size:300%
+    }
+    .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus,
+        .navbar-inverse .navbar-nav .active a:hover{
+            color:rgb(51, 49, 49);
+            background-color:#FFF;
+        }
+        .navbar-inverse .navbar-nav li a{
+          color:rgb(12, 11, 11);
+        }
+
+</style>
+</head>
+<body style="background-color:rgb(204, 243, 237);"> > 
+
+<!-- to create header bar on top of the page-->
+  <nav class ="navbar navbar-inverse">
+      <div class ="container-fluid"> 
+          <div class ="navbar-header">
+              <button type ="button" class ="navbar-toggle" data-toggle="collapse" data-target= "#myNavbar">
+                  <span class = "icon-bar"></span>
+                  <span class = "icon-bar"></span>
+                  <span class = "icon-bar"></span>
+               </button>
+               <a class = "navbar-brand" href= "index.html">Lattitude</a>                                   
+            </div>
+
+            
+                <!-- to create a logo on top of the page -->
+              
+          <div class="collapse navbar-collapse" id="myNavbar">             
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >Plots</a>
+                        
+                    <ul class="dropdown-menu">
+                        <li><a href="temp.html"> Temperature</a></li>
+                        <li><a href="humid.html">Humidity</a></li>
+                        <li><a href="cloud.html">Cloudiness</a></li>
+                        <li><a href="wind.html">Wind Speed</a></li>
+                    </ul>
+                </li>  
+  
+                    <li class="active"> <a href="Comparison.html">Comparison</a></li>
+                    <li class="active"> <a href="Data.html">Data</a></li> 
+               </ul>
+
+
+          </div> 
+      </div>
+
+  </nav>
+  
+    <div class="container">
+    <row>
+    <div class="col-md-6">
+         <h1>  <center>   Lattitude vs. X </center>   </h1>
+        <hr>
+        <br>
+        
+        
+            <picture>
+                <source media="(min-width: 20px)" srcset="Temp.png">
+                <source media="(min-width: 20px)" srcset="Temp.png">
+                <img src="temp.png" alt="Flowers" >
+              <h4>Temperature vs. Latitude</h4>
+            </picture>
+        
+            <br>
+                <p><font size="4" color="black"> The purpose of this project was to analyze how the weather change as you get 
+            closer to the equtor.To accomplish this project we first pulled data from 
+            (Openweather.com) API to assemble data on over 500 cities.</font></p>
+
+        <p><font size="4" color="black"> After assembling the dataset, we used Matplotlib to plot 
+            various aspects of the weather vs lattitude. Factors we looked at included: 
+            Temp, cloudiness, wind speed and humidity.  This site provides the source 
+            data and visualizations created as part of the analysis, as well as 
+            explanations and descriptions of any trends and correlations witnessed.</font></p>
+  </div>
+
+     <div class="col-md-6">
+        <h1> <center>   Visualization </center></h1>
+        <hr>
+        <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="thumbnail">
+                    <img src="Temp.png">
+                      <h4>Temperature vs. Latitude</h4>
+                     <h5> <a href="Temp.html"> <center> Find more </center></a></h5>
+                    </div>  
+                </div>
+                      <div class="col-sm-6 col-md-6">
+                        <div class="thumbnail">                   
+                    <img src="Humid.png">
+                      <h4>Humidity vs. Lattitude</h4> 
+                      <h5> <a href="Humid.html"> <center> Find more </center></a></h5>
+                  </div>
+                </div>             
+
+      </div>
+
+      <div class="row">
+            <div class="col-sm-6 col-md-6">
+              <div class="thumbnail">
+                <img src="Wind.png">
+                  <h4>Wind Speed vs. Latitude</h4>
+                  <h5> <a href="Wind.html"> <center> Find more </center></a></h5>
+                </div>  
+            </div>
+                  <div class="col-sm-6 col-md-6">
+                    <div class="thumbnail">                   
+                <img src="Cloud.png" >
+                  <h4>Cloud vs. Lattitude</h4> 
+                  <h5> <a href="Cloud.html"> <center> Find more </center></a></h5>
+              </div>
+            </div>             
+
+  </div>
+  </div>
+    </row>
+    </div>
+</div>
+
+
+
+
+
+</body>
